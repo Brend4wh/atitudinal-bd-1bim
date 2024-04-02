@@ -1,0 +1,10 @@
+exercicio2
+
+CREATE TABLE informacoes_artis_compo(
+Id UUID PRIMARY KEY,
+Nome VARCHAR(35) NOT NULL,
+data_nasc DATE NOT NULL,
+data_falecimento BOOLEAN NOT NULL,
+tipo_musical CHAR(30) NOT NULL,
+bibliografia TEXT NOT NULL,
+musica_mais_conhecida CHAR(30) NOT NULL);
