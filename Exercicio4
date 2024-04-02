@@ -1,0 +1,37 @@
+exercicio4
+
+CREATE TABLE musicas(
+id UUID PRIMARY KEY,
+nome_musica VARCHAR (45) NOT NULL,
+tempo_musica TIMESTAMP NOT NULL,
+postagem_musica DATE NOT NULL,
+cantor VARCHAR(45) NOT NULL,
+compositor VARCHAR(45) NOT NULL,
+poster_picture BYTEA,
+genero VARCHAR(45)
+);
+
+CREATE TABLE informacoes_artis_compo(
+id UUID PRIMARY KEY,
+Nome VARCHAR(35) NOT NULL,
+data_nasc DATE NOT NULL,
+data_falecimento BOOLEAN NOT NULL,
+tipo_musical CHAR(30) NOT NULL,
+bibliografia TEXT NOT NULL,
+musica_mais_conhecida CHAR(30) NOT NULL,
+musicas_id UUID REFERENCES musicas(id)
+);
+
+CREATE TABLE users(
+id UUID PRIMARY KEY
+email VARCHAR(45) UNIQUE NOT NULL,
+senha CHAR(10) UNIQUE NOT NULL,
+nome_completo VARCHAR(50) NOT NULL,
+data_nascimento DATE NOT NULL,
+genero_fav_de_musica VARCHAR(45) NOT NULL,
+data_criacao_perfil TIMESTAMP NOT NULL,
+ultimo_acesso TIMESTAMP NOT NULL,
+telefone CHAR(11) NOT NULL UNIQUE,
+plano_celular VARCHAR(30) NOT NULL,
+musicas_id UUID REFERENCES musicas(id)
+);
