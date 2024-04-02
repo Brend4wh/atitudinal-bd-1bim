@@ -1,0 +1,11 @@
+exercicio1:
+
+CREATE TABLE musicas(
+Id UUID PRIMARY KEY,
+nome_musica VARCHAR (45) NOT NULL,
+tempo_musica TIMESTAMP NOT NULL,
+postagem_musica DATE NOT NULL,
+cantor VARCHAR(45) NOT NULL,
+compositor VARCHAR(45) NOT NULL,
+poster_picture BYTEA,
+genero VARCHAR(45));
