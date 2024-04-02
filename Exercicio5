@@ -1,0 +1,22 @@
+exercicio5
+
+Musicas:
+
+INSERT INTO musicas (id, nome_musica, tempo_musica, postagem_musica, cantor, compositor, poster_picture, genero) VALUES (1, 'garota de ipanema', '04:02', '10/12/2008', 'tom', 'antonio carlos' ,decode(30gb,imagem),'MPB');
+INSERT INTO musicas (id, nome_musica, tempo_musica, postagem_musica, cantor, compositor, poster_picture, genero) VALUES (2, 'bomdia', '01:40', '11/02/2023', 'anderson', 'carlin e robson' ,decode(1gb,imagem),'funk');
+INSERT INTO musicas (id, nome_musica, tempo_musica, postagem_musica, cantor, compositor, poster_picture, genero) VALUES (3, 'oi', '00:46', '01/05/2015', 'junin', 'paulin' ,decode(10gb,imagem),'samba');
+
+Atores/compositores:
+
+INSERT INTO informacoes_artis_compo (id, nome, data_nasc, data_falecimento, tipo_musical, bibliografia, musica_mais_conhecida) VALUES (1, 'junin', '11/02/1970', 'Falso', 'MPB' ,'um belo cantor...','nao tenho ideia');
+INSERT INTO informacoes_artis_compo (id, nome, data_nasc, data_falecimento, tipo_musical, bibliografia, musica_mais_conhecida) VALUES (2, 'antonio', '01/12/1890', '11/02/1950', 'MPB', 'um belo cantor...' ,'nao tenho ideia2');
+INSERT INTO informacoes_artis_compo (id, nome, data_nasc, data_falecimento, tipo_musical, bibliografia, musica_mais_conhecida) VALUES (3, 'maria clara', '01/12/2000', '10/04/2020', 'funk', 'uma bela cantora...' ,'nao tenho ideia3');
+INSERT INTO informacoes_artis_compo (id, nome, data_nasc, data_falecimento, tipo_musical, bibliografia, musica_mais_conhecida) VALUES (4, 'joao', '01/12/2007', '10/03/2020', 'eletronica', 'um belo cantor...' ,'nao tenho ideia4');
+INSERT INTO informacoes_artis_compo (id, nome, data_nasc, data_falecimento, tipo_musical, bibliografia, musica_mais_conhecida) VALUES (5, 'jorge', '01/12/1950', '10/08/2020', 'samba', 'um belo cantor...' ,'nao tenho ideia5');
+
+Usuarios:
+
+INSERT INTO users (id, email, senha, nome_completo, data_nascimento, genero_fav_de_musica, data_criancao_perfil, ultimo_acesso, telefone, plano_celular) VALUES (1,'jobson@bomdia.com', 'job123', 'jobson da silva espirito santo', '15/11/2008', 'funk', '15/03/2023 09:00:21','01/04/2024 15:00:24','(19)98157-0688','vivo' );
+INSERT INTO users (id, email, senha, nome_completo, data_nascimento, genero_fav_de_musica, data_criancao_perfil, ultimo_acesso, telefone, plano_celular) VALUES (1,'pisci1234@bomdia.com', 'jpri123', 'pricila de almeida santo', '15/11/2000', 'pagode', '01/03/2015 16:04:00','20/05/2020 16:16:17','(18)99127-0678','laricell' );
+
+
