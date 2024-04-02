@@ -1,0 +1,11 @@
+exercicio3
+
+CREATE TABLE users(
+email VARCHAR(45) UNIQUE NOT NULL,
+senha CHAR(10) UNIQUE NOT NULL,
+nome_completo VARCHAR(50) NOT NULL,
+data_nascimento DATE NOT NULL,
+genero_fav_de_musica VARCHAR(45) NOT NULL,
+data_criacao_perfil TIMESTAMP NOT NULL,
+ultimo_acesso TIMESTAMP NOT NULL,
+telefone CHAR(11) NOT NULL UNIQUE);
